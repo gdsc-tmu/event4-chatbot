@@ -1,7 +1,7 @@
 # event4-chatbot
 Google Developer Student Club TMU > event > #5 チャットボット勉強会
 
-##　目的
+## 目的
 LINEやDiscordチャットボットの作成を通して新入生を含めたメンバーで勉強・交流する
 
 ## 日時・場所

@@ -270,6 +270,8 @@ GASアプリのURLはデプロイするごとに変わってしまうので新�
 4. LINEからメッセージを送ってみる<br>
 どうでしたか？自分が送信したテキストが逆から書かれて返信されましたか？
 
+終わり
+
 #### 文中以外の参考資料
 [神戸大学国際人間科学部の学部共通科目「プログラミング基礎演習１・２」より「Google Apps Script で LINE Bot を作成する」](https://www2.kobe-u.ac.jp/~tnishida/programming/GAS-03.html) <br>
 [LINE Developersより「Messaging APIを始めよう」](https://developers.line.biz/ja/docs/messaging-api/getting-started/#step-one-log-in-to-line-developers-console)

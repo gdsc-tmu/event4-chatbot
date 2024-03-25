@@ -29,6 +29,8 @@
 
 3. 実際に使ってみる
 
+https://github.com/gdsc-tmu/event4-chatbot/assets/118093371/d5f03725-cee7-4b30-ba87-ab592518397c
+
 終わり
 
 #### 参考サイト

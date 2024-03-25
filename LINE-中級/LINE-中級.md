@@ -93,7 +93,7 @@ function doPost(e) {
 }
 ```
 
-2. のちに使う情報を`parsed`から取り出す
+2. 後で使う情報を`parsed`から取り出す
 ```javascript
 function getContents(data) {
    let events = data.events;
@@ -120,9 +120,9 @@ function doPost(e) {
 ```
 
 `conEvent`: あとでトークンを取り出すためのもの<br>
-`conTexts`: あとで遊んでLINEに送り返すテキスト
+`conTexts`: 次のステップで遊んでLINEに送り返すテキスト
 
-3. `conTexts`を反転する
+3. `conTexts`を反転する (別に他のことやってもいいよ〜)
 ```javascript
 function reverseChars(s) {
    let ums = s;

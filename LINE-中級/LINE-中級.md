@@ -1,4 +1,4 @@
-# Messaging APIを使ってチャットボットをつくる
+# Messaging APIを使ってチャットボットをつくる (無料)
 
 ## LINEプラットフォームからくるHTTPリクエストをGASで受け取る
 1. LINE Official Accountを作成 (今回は初級編で利用したものを使用)

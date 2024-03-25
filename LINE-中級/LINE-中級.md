@@ -1,4 +1,4 @@
-# Messaging APIを使ってチャットボットをつくる
+# Messaging APIを使ってチャットボットをつくる (無料)
 
 ## LINEプラットフォームからくるHTTPリクエストをGASで受け取る
 1. LINE Official Accountを作成 (今回は初級編で利用したものを使用)
@@ -93,7 +93,7 @@ function doPost(e) {
 }
 ```
 
-2. のちに使う情報を`parsed`から取り出す
+2. 後で使う情報を`parsed`から取り出す
 ```javascript
 function getContents(data) {
    let events = data.events;
@@ -120,9 +120,9 @@ function doPost(e) {
 ```
 
 `conEvent`: あとでトークンを取り出すためのもの<br>
-`conTexts`: あとで遊んでLINEに送り返すテキスト
+`conTexts`: 次のステップで遊んでLINEに送り返すテキスト
 
-3. `conTexts`を反転する
+3. `conTexts`を反転する (別に他のことやってもいいよ〜)
 ```javascript
 function reverseChars(s) {
    let ums = s;
@@ -269,6 +269,8 @@ GASアプリのURLはデプロイするごとに変わってしまうので新�
 
 4. LINEからメッセージを送ってみる<br>
 どうでしたか？自分が送信したテキストが逆から書かれて返信されましたか？
+
+https://github.com/gdsc-tmu/event4-chatbot/assets/118093371/eb291b50-b468-4d22-ad0d-54dbd760c516
 
 終わり
 

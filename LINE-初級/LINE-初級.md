@@ -21,9 +21,6 @@
 7. 「チャット」がOnになっていることを確認
 ![alt text](auto-res-mes05.png)
 
-なっていなければ「変更」からスイッチOn
-![alt text](auto-res-mes06.png)
-
 ## 実際にスマホで使ってみる
 1. 友達追加QRコードをつくる
 ![alt text](gainfriends01.png)

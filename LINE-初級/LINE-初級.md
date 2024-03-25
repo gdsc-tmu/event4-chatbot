@@ -21,9 +21,6 @@
 7. 「チャット」がOnになっていることを確認
 ![alt text](auto-res-mes05.png)
 
-なっていなければ「変更」からスイッチOn
-![alt text](auto-res-mes06.png)
-
 ## 実際にスマホで使ってみる
 1. 友達追加QRコードをつくる
 ![alt text](gainfriends01.png)
@@ -31,6 +28,8 @@
 2. スマホのLINEでQRコードを読み取って友達追加する
 
 3. 実際に使ってみる
+
+https://github.com/gdsc-tmu/event4-chatbot/assets/118093371/d5f03725-cee7-4b30-ba87-ab592518397c
 
 終わり
 

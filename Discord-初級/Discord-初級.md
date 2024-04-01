@@ -19,8 +19,11 @@
 ![alt text](name_sample.png)
 
 1. [Applicationページ](https://discord.com/developers/applications)で作成したBotを選択
+  
+1. Privileged Gateway Intentsの３つを有効化する
+![alt text](bot_privilege.png) 
 
-1. SETTINGSのOAuth2タブを選択し、scopesのチェックボックスのbotにチェックを入れる<br>
+2. SETTINGSのOAuth2タブを選択し、scopesのチェックボックスのbotにチェックを入れる<br>
 ![alt text](bot_check.png)
 
 1. Bot PermissionsからBotの機能に必要な権限にチェックを入れる<br>

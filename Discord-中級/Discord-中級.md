@@ -8,8 +8,7 @@
 ## Repl.itを使ってBotを起動させよう
 今回はRepl.itというサイトでPythonを使ってBotを動かすためのプログラムを作成、実行させます。
 #### Repl.itとは
-Repl.itはウェブブラウザー内で使用できるオンライン IDE(コードを書いて実行することができる環境) です。Repl.itを使うことで自分のパソコンでPythonを実行できる環境がなくてもPythonのプログラムを書いて実行することができます。<br>
-自分のパソコンにPythonを入れてやりたい人は上級編を見てください！
+Repl.itはウェブブラウザー内で使用できるオンライン IDE(コードを書いて実行することができる環境) です。Repl.itを使うことで自分のパソコンでPythonを実行できる環境がなくてもPythonのプログラムを書いて実行することができます。
 
 ## Repl.itでBotを起動させる
 1. [Repl.it](https://replit.com/)にサインアップしてログインします。
@@ -50,6 +49,8 @@ client.run(os.environ['TOKEN'])
 
 * [Repl.it](https://replit.com/)に戻りToolsからSecretsを選択し、出てきた右画面のNew SecretボタンからKeyに TOKEN と入力し、Valueにコピーしたトークンを貼り付けます。
 ![alt text](secret.png)
+
+自分の環境でやる人は.envファイルを作成してそこに書き込むことでおなじようにできます。([参考](https://pypi.org/project/python-dotenv/))
 
 7. 動作確認
   ここまでできたらRunボタンからプログラムを実行してみましょう。うまく行っていればBotがオンラインになると思います。またこのプログラムは $hello とチャットするとHello!と返してくれるプログラムになっています。実際に試してみましょう。止めるときはStopのボタンから止めることができます。

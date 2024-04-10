@@ -52,7 +52,7 @@ source .venv/bin/activate
 
 ### 必要なパッケージのインストール
 ```
-pip install -U discord.py
+pip install discord.py python-dotenv
 ```
 適宜必要になったらほかも入れてください
 
@@ -70,8 +70,8 @@ touch .env
 
 envファイルを作成したら以下を記述してださい。
 
-```env!=
-DISCORD_TOKEN='Discordアカウントの準備で作成したトークンをここに'
+```
+TOKEN='Discordアカウントの準備で作成したトークンをここに'
 ```
 
 ※envの内容はいわゆるCredentialsなので外に漏らさないように管理しましょう。
@@ -99,6 +99,36 @@ Linux/Macの場合
 source .venv/bin/activate
 ```
 で仮想環境をアクティベートしてください。
+
+### サンプルコード
+中級編と同じことができるプログラムです
+
+```python
+# インストールした discord.py を読み込む
+import discord
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+# 接続に必要なオブジェクトを生成
+client = discord.Client(intents=discord.Intents.all())
+
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
+
+# Botの起動とDiscordサーバーへの接続
+client.run(TOKEN)
+```
 
 ## DiscordBotを常時オンラインにするには
 中級編でやったようにRepl.it上でプログラムを実行するとBotをオンラインにしてチャットのやり取りなどができるようになります。

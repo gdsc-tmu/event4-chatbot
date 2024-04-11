@@ -17,11 +17,11 @@ LINEやDiscordチャットボットの作成を通して新入生を含めたメ
 
 ## 資料
 ### LINE
-- [初級](/LINE-初級/)
-- [中級](/LINE-中級/)
-- [上級](/LINE-上級/)
+- [初級](/LINE-初級/LINE-初級.md)
+- [中級](/LINE-中級/LINE-中級.md)
+- [上級](/LINE-上級/LINE-上級.md)
 ### Discord
-- [初級](/LINE-初級/)
-- [中級](/Discord-中級/)
-- [上級](/Discord-上級/)
-### [その他](/その他/)
+- [初級](/Discord-初級/Discord-初級.md)
+- [中級](/Discord-中級/Discord-中級.md)
+- [上級](/Discord-上級/Discord-上級.md)
+### [その他](/その他/その他.md)

@@ -139,7 +139,43 @@ DiscordBotを常時オンラインにするためには「デプロイ」をす�
 [クラウドサービスRenderを利用したPythonアプリの無料デプロイ方法](https://qiita.com/kakiuchis/items/0225664568ece7b7b08b)
 
 ## DiscordBotの機能を増やす
-使えそうな記事を共有します
+使えそうな記事の共有やサンプルプログラムの共有をします。サンプルプログラムを動かす際は追加のパッケージのインストールが必要な場合があります。
+
+<details><summary>ランダムな応答をするようにする</summary>
+
+```python
+import discord
+import os
+from dotenv import load_dotenv
+
+import random
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+# 接続に必要なオブジェクトを生成
+client = discord.Client(intents=discord.Intents.all())
+
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    wordslist = ['Hello!','See you!','こんにちは','さようなら']
+
+    if message.content.startswith('$hello'):
+        await message.channel.send(wordslist[random.randint(0,len(wordslist)-1)])
+
+# Botの起動とDiscordサーバーへの接続
+client.run(TOKEN)
+```
+![alt text](randomwords.jpeg)
+</details>
+
+
 
 [Pythonで実用Discord Bot(discordpy解説)](https://qiita.com/1ntegrale9/items/9d570ef8175cf178468f)
 

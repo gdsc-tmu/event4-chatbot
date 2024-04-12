@@ -173,12 +173,54 @@ async def on_message(message):
 client.run(TOKEN)
 ```
 ![alt text](randomwords.jpeg)
+
 </details>
 
+<details><summary>スラッシュコマンドの実装</summary>
 
+```python
+import discord
+import os
+from dotenv import load_dotenv
+
+from discord import app_commands
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+# 接続に必要なオブジェクトを生成
+client = discord.Client(intents=discord.Intents.all())
+tree = app_commands.CommandTree(client)
+
+# 接続の確認
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+
+@tree.command(name="ping", description="pingを返します。")
+async def ping_command(interaction: discord.Interaction):
+    await interaction.response.send_message("pong", ephemeral=False)
+
+# Botの起動とDiscordサーバーへの接続
+client.run(TOKEN)
+```
+![alt text](slashcommand.png)
+Discordのチャンネルの方で少し設定が必要になります。下のリンクを見てください<br>
+https://note.com/trpg_lisa/n/nca62b0ab145c#cc3075f0-df0b-4d0b-8f83-1c1dffc849b3
+<br>(サーバー設定->連携サービス->自分のbot->コマンドの部分の上書き設定を全部チェックつければいけます)
+</details>
+
+<!-- <details><summary>追加</summary>
+
+</details> -->
+
+
+[triC_Bot](https://github.com/triC-tmu/tric-bot)
+triCのDiscordBotです。Ayuくんが主に作っています。ネット上の情報を拾ってくるとかの参考になるかと思います。
 
 [Pythonで実用Discord Bot(discordpy解説)](https://qiita.com/1ntegrale9/items/9d570ef8175cf178468f)
 
 [Discord Botを作ってみよう #02 - スラッシュコマンドを使ってみよう](https://qiita.com/ukwhatn/items/48953e30ed67dee6fe38)
 
 [誰でも作れる！Discord Bot（応用編）](https://note.com/exteoi/n/n87bd4fa02c95)
+
+[discord.py を使用したdiscord botの作り方を基本から応用まで](https://qiita.com/TakeMimi/items/1e2d76eecc25e92c93ef)

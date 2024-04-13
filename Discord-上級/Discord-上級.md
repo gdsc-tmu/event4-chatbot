@@ -224,6 +224,7 @@ Botは置ける内でランダムな場所を選択するようになってい�
 BotMove()メソッドを改良してみてください。
 
 ```python
+
 import discord
 import os
 from dotenv import load_dotenv
@@ -379,7 +380,7 @@ class Game :
                 if(self.boad[i][j] == '.'): continue
                 base = self.boad[i][j]
                 #横
-                if(j + 5 <10):
+                if(j + 5 <=10):
                     able = True
                     for k in range(5):
                         if(self.boad[i][j+k] != base):
@@ -389,7 +390,7 @@ class Game :
                         return 1 if base == 'x' else 2
                     
                 #縦
-                if(i + 5 < 10):
+                if(i + 5 <= 10):
                     able = True
                     for k in range(5):
                         if(self.boad[i+k][j] != base):
@@ -399,7 +400,7 @@ class Game :
                         return 1 if base == 'x' else 2
                 
                 #右下
-                if(i + 5 < 10 and j + 5 < 10):
+                if(i + 5 <= 10 and j + 5 <= 10):
                     able = True
                     for k in range(5):
                         if(self.boad[i+k][j+k] != base):
@@ -409,7 +410,7 @@ class Game :
                         return 1 if base == 'x' else 2
                 
                 #左下
-                if(i + 5 < 10 and j - 5>= 0):
+                if(i + 5 <= 10 and j - 5>= 0):
                     able = True
                     for k in range(5):
                         if(self.boad[i+k][j-k] != base):
